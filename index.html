@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create an Account </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"> </script>
+</head>
+
+<body>
+    <div class="container">
+        <form name="createAccountForm" id="createAccountForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateForm()">
+            <h1> Create an Account </h1>
+            <label for="First Name"> First Name </label>
+            <input type="text" name="First Name" id="firstname" placeholder="Input First Name" required>
+
+            <label for="Last Name"> Last Name </label>
+            <input type="text" name="Last Name" id="lastname" placeholder="Input Last Name" required>
+
+            <label for="Age"> Age </label>
+            <input type="number" name="Age" id="age" min="1" max="99" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" required>
+
+            <label for="Birthday"> Date of Birth </label>
+            <input type="date" name="Birthday" id="birthday" max="today" required>
+
+            <div class="gender-section">
+                <label> Gender </label> <br>
+                <input type="radio" name="Gender" id="male" value="Male">
+                <label for="Male"> Male </label>
+                <input type="radio" name="Gender" id="female" value="Female">
+                <label for="Female"> Female </label>
+            </div>
+
+            <label for="Email"> Personal Email </label>
+            <input type="email" name="Email" id="email" placeholder="Input Personal Email" size="40" required>
+
+            <label for="Password"> Password </label>
+            <input type="password" name="Password" id="p1" placeholder="Input Password" required>
+
+            <label for="p2"> Confirm Password </label>
+            <input type="password" name="p2" id="p2" placeholder="Re-Type Password" required>
+
+            <input type="hidden" name="type" value="account">
+            <a onclick="validateAndRedirect()" class="redirect-link"> Create Account </a>
+        </form>
+    </div>
+</body>
+</html>

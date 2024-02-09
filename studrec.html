@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Record </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="studentscript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Student Record </h1>
+        <form name="studentRecordForm" id="studentRecordForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateForm()">
+            <label for="Student Number"> Student Number </label>
+            <input type="text" id="studentNumber" name="Student Number" placeholder="Input Student Number" required>
+            
+            <label for="Webmail"> PUP Webmail </label>
+            <input type="email" name="Webmail" id="webmail" placeholder="Input PUP Webmail" size="40" required>
+
+            <label for="Course"> Course </label>
+            <select name="Course" id="course">
+                <option value="" disabled selected> Please choose your course </option>
+                <option value="BSIT"> Bachelor of Science in Information Technology </option>
+                <option value="BSCS"> Bachelor of Science in Computer Science </option>
+            </select>
+
+            <label for="Year Level"> Year Level </label>
+            <select name="Year Level" id="yearlevel">
+                <option value="" disabled selected> Please choose your year level </option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+
+            <label for="Section"> Section </label>
+            <select name="Section" id="section">
+                <option value="" disabled selected> Please choose your section </option>
+                <option value="Section 1"> Section 1 </option>
+                <option value="Section 1N"> Section 1N </option>
+                <option value="Section 2"> Section 2 </option>
+                <option value="Section 2N"> Section 2N </option>
+                <option value="Section 3"> Section 3 </option>
+                <option value="Section 4"> Section 4 </option>
+                <option value="Section 5"> Section 5 </option>
+            </select>
+            
+            <input type="hidden" name="type" value="student">
+            <a onclick="validateAndRedirect()" class="redirect-link"> Submit </a>
+        </form>
+    </div>
+</body>
+</html>

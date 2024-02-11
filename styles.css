@@ -74,11 +74,11 @@ input[type="submit"]:hover {
     color: #fff;
     background-color:#bf88e4;
     border-radius: 5px;
-    border-color: #bf88e4;
+    border: none;
 }
 
 .redirect-link:hover {
     background-color:#51257a;
     cursor: pointer;
-    border: #51257a;
+    border: none;
 }

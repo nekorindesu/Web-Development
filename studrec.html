@@ -1,3 +1,4 @@
+<!-- MAGNO, KATHERINE D. || BSIT 3-1 || TASK # 1 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
 <body>
     <div class="container">
         <h1> Student Record </h1>
-        <form name="studentRecordForm" id="studentRecordForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateForm()">
+        <form name="studentRecordForm" id="studentRecordForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateAndRedirect()">
             <label for="Student Number"> Student Number </label>
             <input type="text" id="studentNumber" name="Student Number" placeholder="Input Student Number" required>
             
@@ -48,7 +49,7 @@
             </select>
             
             <input type="hidden" name="type" value="student">
-            <a onclick="validateAndRedirect()" class="redirect-link"> Submit </a>
+            <button type="submit" class="redirect-link"> Submit </button>
         </form>
     </div>
 </body>

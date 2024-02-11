@@ -1,3 +1,4 @@
+<!-- MAGNO, KATHERINE D. || BSIT 3-1 || TASK # 1 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
 
 <body>
     <div class="container">
-        <form name="createAccountForm" id="createAccountForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateForm()">
+        <form name="createAccountForm" id="createAccountForm" method="post" action="https://script.google.com/macros/s/AKfycbxxPTvAtWB5EaII-robiLx7qRQYX2elNjgTWOc4LV9ilTG3iPKvA-mklmRqOXGxGTte/exec" onsubmit="return validateAndRedirect()">
             <h1> Create an Account </h1>
             <label for="First Name"> First Name </label>
             <input type="text" name="First Name" id="firstname" placeholder="Input First Name" required>
@@ -45,7 +46,7 @@
             <input type="password" name="p2" id="p2" placeholder="Re-Type Password" required>
 
             <input type="hidden" name="type" value="account">
-            <a onclick="validateAndRedirect()" class="redirect-link"> Create Account </a>
+            <button type="submit" class="redirect-link">Create Account</button>
         </form>
     </div>
 </body>
